@@ -30,4 +30,4 @@ i=1
 
 while i <= w:
     i += 1
-    print(range(i))
+    print(i*("x"))
