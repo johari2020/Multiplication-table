@@ -25,9 +25,10 @@ height = input("Width of multiplication table: ")
 width = input ("Height of multiplication table: ")
 h = int(height)
 w = int(width) 
-
-i=1
+i=0
+a = range(i,h)
+b = range(i,w)
 
 while i <= w:
     i += 1
-    print(i*("x"))
+    print(list(a)*(h+1))
