@@ -31,6 +31,3 @@ i=1
 while i <= w:
     i += 1
     print(range(i))
-
-
-print([x**2 for x in range(2,12)])
