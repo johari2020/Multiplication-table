@@ -1,7 +1,8 @@
+
 """
 multiplication-table.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: johari ajwang
+Credit: megsnyder
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -25,10 +26,14 @@ height = input("Width of multiplication table: ")
 width = input ("Height of multiplication table: ")
 h = int(height)
 w = int(width) 
-i=0
+i=1
 a = range(i,h)
 b = range(i,w)
 
-while i <= w:
-    i += 1
-    print(list(a)*(h+1))
+l=list(range(1,w))
+print (list(l))
+
+while i > h:
+    for i in l:
+        i+=i
+    print(i*l)
