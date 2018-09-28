@@ -2,7 +2,8 @@
 """
 multiplication-table.py
 Author: johari ajwang
-Credit: megsnyder
+Credit: megsnyder, noah, #https://stackoverflow.com/questions/35166633/how-do-i-multiply-each-element-in-a-list-by-a-number/35166717
+
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -38,7 +39,7 @@ for j in a:
     d = [i * (j) for i in c]
     for k in d:
         meg = meg + str(k) + " "
-    print(meg)
+    print("{0:>3}".format(meg))
     #print((d), end = ' ' )
     
     #print(" ")
