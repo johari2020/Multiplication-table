@@ -1,4 +1,3 @@
-
 """
 multiplication-table.py
 Author: johari ajwang
