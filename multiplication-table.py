@@ -22,18 +22,23 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
-height = input("Width of multiplication table: ")
-width = input ("Height of multiplication table: ")
-h = int(height)
-w = int(width) 
-i=1
-a = range(i,h)
-b = range(i,w)
+width = input("Width of multiplication table: ")
+height = input ("Height of multiplication table: ")
+w=(int(width)+1)
+h=int(height)
 
-l=list(range(1,w))
-print (list(l))
+t = "X"
+b=list(range(0,w)) 
 
-while i > h:
-    for i in l:
-        i+=i
-    print(i*l)
+a=range(0,h)
+for j in a:
+    meg=""
+    j+=1
+    c=list(range(1,w)) 
+    d = [i * (j) for i in c]
+    for k in d:
+        meg = meg + str(k) + " "
+    print(meg)
+    #print((d), end = ' ' )
+    
+    #print(" ")
